@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif, "Courier New", Courier, monospace;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "img"
+    "nav"
+    "main"
+    "footer";
+}
+
+
+/* POSICIONES DEL GRID */
+
+.img-logo {
+  grid-area: img;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* ENCABEZADO */
+
+.nav {
+  display: flex;
+  width: 100%;
+}
+
+.img-logo {
+  width: 100%;
+}
+
+.nav_list {
+  width: 100%;
+  text-align: center;
+  margin: auto 0;
+  list-style: none;
+}
+
+.nav_items {
+  margin: 1em;
+  margin-left: -1.2em;
+}
+
+.nav_links {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+/* MAIN */
+
+.main_imagenMedia {
+  display: none;
+}
+
+.main_cartas {
+  margin: 2em;
+  background: url("../images/pijamas.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 16em;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartas_colecciones {
+  color: blue;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.piedepagina {
+  display: none;
+}
+
+.footer a {
+  font-size: 1.2rem;
+  color: blueviolet;
+}
+
+@media (min-width: 750px) {
+  body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "header "
+      "main"
+      "footer";
+  } 
+
+}
+
+  
+  /* POSICIONES GRID */
+
+  .header {
+    grid-area: header;
+  }
+
+  .nav {
+    grid-area: nav;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .nav_links {
+    font-size: 1.65em;
+  }
+
+  .img-logo {
+    width: 50%;
+    height: auto;
+  }
+
+  .header {
+    display: flex;
+    margin-bottom: 3em;
+  }
+
+  .nav {
+    
+    width: 100%;
+  }
+
+  /* MAIN */
+
+  .main {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+  }
+
+  .main_imagenMedia {
+    margin-bottom: 3em;
+    display: inline-block;
+    height: 450px;
+    width: 33%;
+    object-fit: cover;
+  }
+
+  .main_colecciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .main_cartas {
+    width: 30%;
+  }
+  /* FOOTER */
+
+  .piedepagina {
+    display: block;
+    width: 100%;
+  }
+
+  .footer {
+    text-align: left;
+    height: 200px;
+  }
+
+/* COLECCIONES */
+
+
+.nav_colecciones{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: auto;
+  
+}
+/* COMO COMPRAR */
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  color: rgb(7, 7, 70);
+}
+
+
+
+/* CONTACTO*/
+
+.main_datocontacto{
+display: flex;
+flex-direction: column;
+margin-top: 25px;
+}
+.main_registro {
+  list-style-type: none;
+  }
+
+
+/* NUESTRA MARCA*/
+.nuestramarca{
+  display: block;
+  width: 100%;
+margin: 100px auto;
+}
+/* REGISTRO*/
+.nav__registroformulario {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  list-style-type: none;
+  color: rgb(7, 7, 70);
+  }
+
+/*# sourceMappingURL=style.css.map */
+
